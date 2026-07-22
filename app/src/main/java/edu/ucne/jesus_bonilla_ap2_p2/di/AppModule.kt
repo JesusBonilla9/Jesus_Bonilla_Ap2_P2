@@ -1,12 +1,14 @@
 package edu.ucne.jesus_bonilla_ap2_p2.di
 
-import com.squareup.moshi.KotlinJsonAdapterFactory
 import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import edu.ucne.jesus_bonilla_ap2_p2.data.examen.remote.ExamenApi
+import edu.ucne.jesus_bonilla_ap2_p2.data.examen.remote.GastosApi
+import edu.ucne.jesus_bonilla_ap2_p2.data.examen.repository.GastoRepositoryImpl
+import edu.ucne.jesus_bonilla_ap2_p2.domain.gasto.repository.GastoRepository
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import javax.inject.Singleton
@@ -16,19 +18,26 @@ import javax.inject.Singleton
 object AppModule {
     @Provides
     @Singleton
-    fun provideMoshi(): Moshi{
+    fun provideMoshi(): Moshi {
         return Moshi
             .Builder()
             .add(KotlinJsonAdapterFactory())
             .build()
     }
+
     @Provides
     @Singleton
-    fun provideApi(moshi: Moshi): ExamenApi{
+    fun provideApi(moshi: Moshi): GastosApi {
         return Retrofit.Builder()
-            .baseUrl("")
+            .baseUrl("https://api-2026-h7eddqgydxc0fmau.eastus2-01.azurewebsites.net/")
             .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
-            .create(ExamenApi::class.java)
+            .create(GastosApi::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideGastoRepository(gastoRepositoryImpl: GastoRepositoryImpl): GastoRepository {
+        return gastoRepositoryImpl
     }
 }

@@ -105,10 +105,10 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.5.4")
     debugImplementation("androidx.compose.ui:ui-test-manifest:1.5.4")
 
-    testImplementation("com.google.dagger:hilt-android-testing:2.48")
-    kspTest("com.google.dagger:hilt-android-compiler:2.48")
-    androidTestImplementation("com.google.dagger:hilt-android-testing:2.48")
-    kspAndroidTest("com.google.dagger:hilt-android-compiler:2.48")
+    testImplementation(libs.hilt.android.testing)
+    kspTest(libs.hilt.android.compiler)
+    androidTestImplementation(libs.hilt.android.testing)
+    kspAndroidTest(libs.hilt.android.compiler)
 
     testImplementation("androidx.room:room-testing:2.6.0")
 }
