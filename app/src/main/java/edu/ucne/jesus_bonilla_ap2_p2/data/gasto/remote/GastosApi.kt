@@ -1,7 +1,7 @@
-package edu.ucne.jesus_bonilla_ap2_p2.data.examen.remote
+package edu.ucne.jesus_bonilla_ap2_p2.data.gasto.remote
 
-import edu.ucne.jesus_bonilla_ap2_p2.data.examen.remote.dto.GastoResponseDto
-import edu.ucne.jesus_bonilla_ap2_p2.data.examen.remote.dto.GastoRequestDto
+import edu.ucne.jesus_bonilla_ap2_p2.data.gasto.remote.dto.GastoResponseDto
+import edu.ucne.jesus_bonilla_ap2_p2.data.gasto.remote.dto.GastoRequestDto
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.GET

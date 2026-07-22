@@ -1,6 +1,6 @@
 package edu.ucne.jesus_bonilla_ap2_p2.presentation.gasto.list
 
-import edu.ucne.jesus_bonilla_ap2_p2.data.examen.remote.dto.GastoResponseDto
+import edu.ucne.jesus_bonilla_ap2_p2.data.gasto.remote.dto.GastoResponseDto
 
 data class GastoListUiState(
     val isLoading: Boolean = false,

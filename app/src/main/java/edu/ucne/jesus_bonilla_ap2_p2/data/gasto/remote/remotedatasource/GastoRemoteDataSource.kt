@@ -1,8 +1,8 @@
-package edu.ucne.jesus_bonilla_ap2_p2.data.examen.remote.remotedatasource
+package edu.ucne.jesus_bonilla_ap2_p2.data.gasto.remote.remotedatasource
 
-import edu.ucne.jesus_bonilla_ap2_p2.data.examen.remote.GastosApi
-import edu.ucne.jesus_bonilla_ap2_p2.data.examen.remote.dto.GastoResponseDto
-import edu.ucne.jesus_bonilla_ap2_p2.data.examen.remote.dto.GastoRequestDto
+import edu.ucne.jesus_bonilla_ap2_p2.data.gasto.remote.GastosApi
+import edu.ucne.jesus_bonilla_ap2_p2.data.gasto.remote.dto.GastoResponseDto
+import edu.ucne.jesus_bonilla_ap2_p2.data.gasto.remote.dto.GastoRequestDto
 import retrofit2.HttpException
 import javax.inject.Inject
 

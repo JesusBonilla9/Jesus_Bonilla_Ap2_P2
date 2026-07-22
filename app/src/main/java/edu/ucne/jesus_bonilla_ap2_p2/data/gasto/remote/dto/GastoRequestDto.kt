@@ -1,4 +1,4 @@
-package edu.ucne.jesus_bonilla_ap2_p2.data.examen.remote.dto
+package edu.ucne.jesus_bonilla_ap2_p2.data.gasto.remote.dto
 
 data class GastoRequestDto(
     val gastoId: Int,

@@ -3,8 +3,8 @@ package edu.ucne.jesus_bonilla_ap2_p2.presentation.gasto.detail
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import edu.ucne.jesus_bonilla_ap2_p2.data.examen.remote.Resource
-import edu.ucne.jesus_bonilla_ap2_p2.data.examen.remote.dto.GastoRequestDto
+import edu.ucne.jesus_bonilla_ap2_p2.data.gasto.remote.Resource
+import edu.ucne.jesus_bonilla_ap2_p2.data.gasto.remote.dto.GastoRequestDto
 import edu.ucne.jesus_bonilla_ap2_p2.domain.gasto.usecase.GetGastoDetailUseCase
 import edu.ucne.jesus_bonilla_ap2_p2.domain.gasto.usecase.SaveGastoUseCase
 import kotlinx.coroutines.flow.MutableStateFlow

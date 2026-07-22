@@ -1,7 +1,7 @@
 package edu.ucne.jesus_bonilla_ap2_p2.domain.gasto.usecase
 
-import edu.ucne.jesus_bonilla_ap2_p2.data.examen.remote.Resource
-import edu.ucne.jesus_bonilla_ap2_p2.data.examen.remote.dto.GastoRequestDto
+import edu.ucne.jesus_bonilla_ap2_p2.data.gasto.remote.Resource
+import edu.ucne.jesus_bonilla_ap2_p2.data.gasto.remote.dto.GastoRequestDto
 import edu.ucne.jesus_bonilla_ap2_p2.domain.gasto.repository.GastoRepository
 import javax.inject.Inject
 

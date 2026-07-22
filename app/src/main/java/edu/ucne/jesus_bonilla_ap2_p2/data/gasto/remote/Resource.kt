@@ -1,4 +1,4 @@
-package edu.ucne.jesus_bonilla_ap2_p2.data.examen.remote
+package edu.ucne.jesus_bonilla_ap2_p2.data.gasto.remote
 
 sealed class Resource<T>(
     val data: T? = null,

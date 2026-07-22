@@ -6,8 +6,8 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import edu.ucne.jesus_bonilla_ap2_p2.data.examen.remote.GastosApi
-import edu.ucne.jesus_bonilla_ap2_p2.data.examen.repository.GastoRepositoryImpl
+import edu.ucne.jesus_bonilla_ap2_p2.data.gasto.remote.GastosApi
+import edu.ucne.jesus_bonilla_ap2_p2.data.gasto.repository.GastoRepositoryImpl
 import edu.ucne.jesus_bonilla_ap2_p2.domain.gasto.repository.GastoRepository
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
