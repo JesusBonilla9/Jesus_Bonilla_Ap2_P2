@@ -7,6 +7,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import edu.ucne.jesus_bonilla_ap2_p2.data.gasto.remote.GastosApi
+import edu.ucne.jesus_bonilla_ap2_p2.data.gasto.remote.remotedatasource.GastoRemoteDataSource
 import edu.ucne.jesus_bonilla_ap2_p2.data.gasto.repository.GastoRepositoryImpl
 import edu.ucne.jesus_bonilla_ap2_p2.domain.gasto.repository.GastoRepository
 import retrofit2.Retrofit
@@ -37,7 +38,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideGastoRepository(gastoRepositoryImpl: GastoRepositoryImpl): GastoRepository {
-        return gastoRepositoryImpl
+    fun provideGastoRepository(remoteDataSource: GastoRemoteDataSource): GastoRepository {
+        return GastoRepositoryImpl(remoteDataSource)
     }
 }
