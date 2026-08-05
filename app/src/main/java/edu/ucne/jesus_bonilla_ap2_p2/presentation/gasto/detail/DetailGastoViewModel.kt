@@ -48,6 +48,7 @@ class DetailGastoViewModel @Inject constructor(
     }
 
     fun getGasto(id: Int) {
+        _state.update { it.copy(isLoading = true, isSaved = false, error = null) }
         viewModelScope.launch {
             getGastoDetailUseCase(id).collect { result ->
                 when (result) {
